@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ScrumView: View {
+    let scrums: [DailyScrum]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(scrums) { scrum in
+            CardView(scrum: scrum)
+                .listRowBackground(scrum.theme.mainColor)
+        }
     }
 }
 
 #Preview {
-    ScrumView()
+    ScrumView(scrums: DailyScrum.sampleData)
 }
