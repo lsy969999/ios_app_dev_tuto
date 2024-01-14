@@ -28,6 +28,7 @@
 		3DD81AFD2B544B9E002CD15B /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD81AFC2B544B9E002CD15B /* ding.wav */; };
 		3DD81AFF2B54501E002CD15B /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD81AFE2B54501E002CD15B /* NewScrumSheet.swift */; };
 		3DD81B022B5451E2002CD15B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD81B012B5451E2002CD15B /* History.swift */; };
+		3DD81B042B5456A6002CD15B /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD81B032B5456A6002CD15B /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		3DD81AFC2B544B9E002CD15B /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		3DD81AFE2B54501E002CD15B /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		3DD81B012B5451E2002CD15B /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		3DD81B032B5456A6002CD15B /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				3DD81AE12B53BAD2002CD15B /* DailyScrum.swift */,
 				3DD81AF52B54452B002CD15B /* ScrumTimer.swift */,
 				3DD81B012B5451E2002CD15B /* History.swift */,
+				3DD81B032B5456A6002CD15B /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				3DD81AF82B544806002CD15B /* MeetingFooterView.swift in Sources */,
 				3DD81AF62B54452B002CD15B /* ScrumTimer.swift in Sources */,
 				3DD81AE22B53BAD2002CD15B /* DailyScrum.swift in Sources */,
+				3DD81B042B5456A6002CD15B /* ScrumStore.swift in Sources */,
 				3DD81AEA2B53E23D002CD15B /* DetailView.swift in Sources */,
 				3DD81AF22B54432E002CD15B /* MeetingHeaderView.swift in Sources */,
 				3DD81AEC2B53F972002CD15B /* DetailEditView.swift in Sources */,
