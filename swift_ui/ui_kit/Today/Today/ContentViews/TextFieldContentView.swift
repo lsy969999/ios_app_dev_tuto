@@ -10,6 +10,7 @@ import UIKit
 class TextFieldContentView: UIView, UIContentView {
     struct Configuration: UIContentConfiguration {
         var text: String? = ""
+        var onChange: (String) -> Void = {_ in }
         func makeContentView() -> UIView & UIContentView
         {
             return TextFieldContentView(self)
@@ -44,6 +45,7 @@ class TextFieldContentView: UIView, UIContentView {
                 right: 16
             )
         )
+        textField.addTarget(self, action: #selector(didChange(_:)), for: .editingChanged)
         textField.clearButtonMode = .whileEditing
     }
     
@@ -58,6 +60,13 @@ class TextFieldContentView: UIView, UIContentView {
             return
         }
         textField.text = configuration.text
+    }
+    
+    @objc private func didChange(_ sender: UITextField) {
+        guard let configuration = configuration as? TextFieldContentView.Configuration else {
+            return
+        }
+        configuration.onChange(textField.text ?? "")
     }
 }
 
