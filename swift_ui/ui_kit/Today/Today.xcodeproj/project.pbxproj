@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D1412242B5516E5001F2135 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412232B5516E5001F2135 /* ReminderViewController.swift */; };
 		3D1412272B551880001F2135 /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412262B551880001F2135 /* ReminderViewController+Row.swift */; };
+		3D1412292B555115001F2135 /* ReminderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412282B555115001F2135 /* ReminderViewController+Section.swift */; };
 		3DD81B1F2B54E37E002CD15B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD81B1E2B54E37E002CD15B /* AppDelegate.swift */; };
 		3DD81B212B54E37E002CD15B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD81B202B54E37E002CD15B /* SceneDelegate.swift */; };
 		3DD81B232B54E37E002CD15B /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD81B222B54E37E002CD15B /* ReminderListViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3D1412232B5516E5001F2135 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		3D1412262B551880001F2135 /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
+		3D1412282B555115001F2135 /* ReminderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Section.swift"; sourceTree = "<group>"; };
 		3DD81B1B2B54E37E002CD15B /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD81B1E2B54E37E002CD15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD81B202B54E37E002CD15B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				3D1412232B5516E5001F2135 /* ReminderViewController.swift */,
 				3D1412262B551880001F2135 /* ReminderViewController+Row.swift */,
+				3D1412282B555115001F2135 /* ReminderViewController+Section.swift */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1412292B555115001F2135 /* ReminderViewController+Section.swift in Sources */,
 				3DD81B3D2B54F5FA002CD15B /* UIColor+Today.swift in Sources */,
 				3D1412272B551880001F2135 /* ReminderViewController+Row.swift in Sources */,
 				3DD81B412B550B23002CD15B /* ReminderListViewController+Actions.swift in Sources */,
