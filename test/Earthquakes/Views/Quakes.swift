@@ -24,6 +24,7 @@ struct Quakes: View {
     @AppStorage("lastUpdated")
     var lastUpdated = Date.distantFuture.timeIntervalSince1970
 
+    @EnvironmentObject var provider: QuakesProvier
     @State var quakes = staticData
     @State var editMode: EditMode = .inactive
     @State var selectMode: SelectMode = .inactive
@@ -43,9 +44,13 @@ struct Quakes: View {
             .toolbar(content: toolbarContent)
             .environment(\.editMode, $editMode)
             .refreshable {
-                fetchQuakes()
+                await fetchQuakes()
+            }
+            .task {
+                await fetchQuakes()
             }
         }
+        
     }
 }
 
@@ -59,11 +64,12 @@ extension Quakes {
     }
 
     func deleteQuakes(at offsets: IndexSet) {
-        quakes.remove(atOffsets: offsets)
+//        quakes.remove(atOffsets: offsets)
+        provider.deleteQuakes(atOffsets: offsets)
     }
     func deleteQuakes(for codes: Set<String>) {
         var offsetsToDelete: IndexSet = []
-        for (index, element) in quakes.enumerated() {
+        for (index, element) in provider.quakes.enumerated() {
             if codes.contains(element.code) {
                 offsetsToDelete.insert(index)
             }
@@ -71,9 +77,16 @@ extension Quakes {
         deleteQuakes(at: offsetsToDelete)
         selection.removeAll()
     }
-    func fetchQuakes() {
+    func fetchQuakes() async {
         isLoading = true
-        self.quakes = staticData
+        do {
+            try await provider.fetchQuakes()
+            lastUpdated = Date().timeIntervalSince1970
+        } catch {
+//            self.error = error as? QuakeError ?? .unexpectedError(error: error)
+//                        self.hasError = true
+        }
+        
         lastUpdated = Date().timeIntervalSince1970
         isLoading = false
     }
@@ -82,5 +95,8 @@ extension Quakes {
 struct Quakes_Previews: PreviewProvider {
     static var previews: some View {
         Quakes()
+            .environmentObject(
+                            QuakesProvier(client:
+                                            QuakeClient(downloader: TestDownloader())))
     }
 }
