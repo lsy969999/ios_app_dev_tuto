@@ -36,6 +36,10 @@
 		3D1412782B56AF03001F2135 /* QuakesProvier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412762B56AF03001F2135 /* QuakesProvier.swift */; };
 		3D14127C2B56B131001F2135 /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412632B56ACE0001F2135 /* TestDownloader.swift */; };
 		3D14127D2B56B141001F2135 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412582B569338001F2135 /* TestData.swift */; };
+		3D1412802B57B9AF001F2135 /* CacheEntryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14127F2B57B9AF001F2135 /* CacheEntryObject.swift */; };
+		3D1412812B57B9AF001F2135 /* CacheEntryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14127F2B57B9AF001F2135 /* CacheEntryObject.swift */; };
+		3D1412832B57BA01001F2135 /* NSCache+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412822B57BA01001F2135 /* NSCache+Subscript.swift */; };
+		3D1412842B57BA01001F2135 /* NSCache+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1412822B57BA01001F2135 /* NSCache+Subscript.swift */; };
 		7CC62565273C2A9200F87758 /* Quake+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC62564273C2A9200F87758 /* Quake+Color.swift */; };
 		AA2F4EB4276BACEC009837CD /* QuakeMagnitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F4EB3276BACEC009837CD /* QuakeMagnitude.swift */; };
 		AA988DD327E900B6004EA073 /* Quakes+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA988DD227E900B6004EA073 /* Quakes+Toolbar.swift */; };
@@ -74,6 +78,8 @@
 		3D1412612B56AC16001F2135 /* QuakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeClient.swift; sourceTree = "<group>"; };
 		3D1412632B56ACE0001F2135 /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
 		3D1412762B56AF03001F2135 /* QuakesProvier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvier.swift; sourceTree = "<group>"; };
+		3D14127F2B57B9AF001F2135 /* CacheEntryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheEntryObject.swift; sourceTree = "<group>"; };
+		3D1412822B57BA01001F2135 /* NSCache+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+Subscript.swift"; sourceTree = "<group>"; };
 		54CF5BED3CD9DE525986B01C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		6EC8C05DC1E92B40CD3EBA87 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		7CC62564273C2A9200F87758 /* Quake+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Color.swift"; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 		AD43F1D926158A630068AABC = {
 			isa = PBXGroup;
 			children = (
+				3D1412822B57BA01001F2135 /* NSCache+Subscript.swift */,
+				3D14127F2B57B9AF001F2135 /* CacheEntryObject.swift */,
 				3D1412762B56AF03001F2135 /* QuakesProvier.swift */,
 				3D1412612B56AC16001F2135 /* QuakeClient.swift */,
 				3D14125F2B56AB42001F2135 /* HttpDataDownloader.swift */,
@@ -329,6 +337,7 @@
 				3D1412702B56AEDA001F2135 /* Quakes+Toolbar.swift in Sources */,
 				3D14126F2B56AED7001F2135 /* QuakeMagnitude.swift in Sources */,
 				3D1412752B56AEE4001F2135 /* DeleteButton.swift in Sources */,
+				3D1412842B57BA01001F2135 /* NSCache+Subscript.swift in Sources */,
 				3D14126A2B56AEB2001F2135 /* GeoJSON.swift in Sources */,
 				3D14126E2B56AED5001F2135 /* QuakeRow.swift in Sources */,
 				3D1412682B56AEAC001F2135 /* Quake+Color.swift in Sources */,
@@ -338,6 +347,7 @@
 				3D14126D2B56AEC4001F2135 /* Quakes.swift in Sources */,
 				3D1412782B56AF03001F2135 /* QuakesProvier.swift in Sources */,
 				3D1412712B56AEDD001F2135 /* SelectButton.swift in Sources */,
+				3D1412812B57B9AF001F2135 /* CacheEntryObject.swift in Sources */,
 				3D1412692B56AEAF001F2135 /* QuakeError.swift in Sources */,
 				3D14126C2B56AEB6001F2135 /* EarthquakesApp.swift in Sources */,
 				3D14126B2B56AEB4001F2135 /* QuakeLocation.swift in Sources */,
@@ -359,6 +369,7 @@
 				3D14125C2B5694FC001F2135 /* GeoJSON.swift in Sources */,
 				ADDDB1812625242200241A73 /* QuakeRow.swift in Sources */,
 				7CC62565273C2A9200F87758 /* Quake+Color.swift in Sources */,
+				3D1412802B57B9AF001F2135 /* CacheEntryObject.swift in Sources */,
 				AD43F1E626158A640068AABC /* EarthquakesApp.swift in Sources */,
 				AA988DDB27E9028A004EA073 /* ToolbarStatus.swift in Sources */,
 				AA988DD327E900B6004EA073 /* Quakes+Toolbar.swift in Sources */,
@@ -372,6 +383,7 @@
 				AD57B10226561FE1005183D0 /* Quakes.swift in Sources */,
 				3D14127C2B56B131001F2135 /* TestDownloader.swift in Sources */,
 				AD43F1FA26158CD50068AABC /* Quake.swift in Sources */,
+				3D1412832B57BA01001F2135 /* NSCache+Subscript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
